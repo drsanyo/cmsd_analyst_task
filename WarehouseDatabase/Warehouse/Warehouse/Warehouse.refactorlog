@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="43fa66b2-76c9-465b-9cea-73a75ff56172" ChangeDateTime="08/01/2019 05:45:46">
+    <Property Name="ElementName" Value="[dbo].[AIRCRAFT].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[AIRCRAFT]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="ACT_AUTO_KEY" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="3f7fcdf5-8fc2-4b8f-a203-ffd03f2fb9a2" ChangeDateTime="08/01/2019 05:47:42">
+    <Property Name="ElementName" Value="[dbo].[COUNTRY_CODES].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[COUNTRY_CODES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="COC_AUTO_KEY" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f79c4175-c580-4f22-8126-7bac45c4befc" ChangeDateTime="08/01/2019 05:49:17">
+    <Property Name="ElementName" Value="[dbo].[MODEL].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[MODEL]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MDL_AUTO_KEY" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="fec54f52-0dfc-4981-9eb5-2d19c8aec960" ChangeDateTime="08/01/2019 05:50:13">
+    <Property Name="ElementName" Value="[dbo].[COMPANIES].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[COMPANIES]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="CMP_AUTO_KEY" />
+  </Operation>
+</Operations>
