@@ -58,12 +58,14 @@
     <Folder Include="Properties" />
     <Folder Include="dbo" />
     <Folder Include="dbo\tables" />
+    <Folder Include="dbo\views" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\tables\AIRCRAFT.sql" />
     <Build Include="dbo\tables\COUNTRY_CODES.sql" />
     <Build Include="dbo\tables\MODEL.sql" />
     <Build Include="dbo\tables\COMPANIES.sql" />
+    <Build Include="dbo\views\vw_aircraft_details.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Warehouse.refactorlog" />
