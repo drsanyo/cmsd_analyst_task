@@ -1,17 +1,17 @@
-import sys
+import logging
 
-import repositories.aircraftRepository as aircraftRepository
+from repositories.aircraftRepository import aircraftRepository
+from reportGenerator import reportGenerator
+from htmlFormatter import htmlFormatter
+from emailSender import emailSender
 
+logging.basicConfig(filename='log.log',level=logging.DEBUG)
 
-repo = aircraftRepository.aircraftRepository()
-aircraftDetails = repo.retrieveAircraftDetails()
+reportItems = reportGenerator().generateEuropeanAircraftReportItems()
+europeReport = htmlFormatter().createEuropeanAircraftReport(reportItems, "Aircrafts from Europe countries")
 
-for row in aircraftDetails:
-    print(
-        row.TAIL_NUMBER + " - " 
-        + row.TAIL_NUMBER + " - " 
-        + row.MODEL_NUMBER + " - " 
-        + row.MODEL_DESCRIPTION + " - " 
-        + row.OWNER_COMPANY_NAME + " - " 
-        + row.COMPANY_COUNTRY_CODE + " - " 
-        + row.COMPANY_COUNTRY_NAME)
+reportItems = reportGenerator().generateNonEuropeanAircraftReportItems()
+nonEuropeReport = htmlFormatter().createEuropeanAircraftReport(reportItems, "Aircrafts from NON Europe countries")
+
+emailSender().sendAutomaticEmailEmail(europeReport + " " + nonEuropeReport)
+

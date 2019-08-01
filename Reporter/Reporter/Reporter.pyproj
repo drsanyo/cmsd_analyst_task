@@ -21,13 +21,33 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="constants.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="emailSender.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="htmlFormatter.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Reporter.py" />
+    <Compile Include="reportGenerator.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="repositories\aircraftRepository.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="repositories\configurationRepository.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.ini">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
