@@ -152,3 +152,6 @@ _ReSharper*/
 .vs/
 #Nuget packages folder
 packages/
+/WarehouseDatabase/Warehouse/Warehouse.dbmdl
+*.dbmdl
+*.jfm
