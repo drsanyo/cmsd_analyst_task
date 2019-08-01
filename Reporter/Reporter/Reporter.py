@@ -8,10 +8,10 @@ from emailSender import emailSender
 logging.basicConfig(filename='log.log',level=logging.DEBUG)
 
 reportItems = reportGenerator().generateEuropeanAircraftReportItems()
-europeReport = htmlFormatter().createEuropeanAircraftReport(reportItems, "Aircrafts from Europe countries")
+europeReport = htmlFormatter().createAircraftReport(reportItems, "Aircrafts from Europe countries")
 
 reportItems = reportGenerator().generateNonEuropeanAircraftReportItems()
-nonEuropeReport = htmlFormatter().createEuropeanAircraftReport(reportItems, "Aircrafts from NON Europe countries")
+nonEuropeReport = htmlFormatter().createAircraftReport(reportItems, "Aircrafts from NON Europe countries")
 
 emailSender().sendAutomaticEmailEmail(europeReport + " " + nonEuropeReport)
 

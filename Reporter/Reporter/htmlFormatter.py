@@ -2,7 +2,7 @@ import os
 import constants
 
 class htmlFormatter:
-    def createEuropeanAircraftReport(self, reportItems, reportName):
+    def createAircraftReport(self, reportItems, reportName):
         tableLines = self.__makeTableRows(reportItems)
         table = self.__makeTable(tableLines, reportName)
         page = self.__makePage(table)
