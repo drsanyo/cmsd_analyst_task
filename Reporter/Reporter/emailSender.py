@@ -5,7 +5,7 @@ from repositories.configurationRepository import configurationRepository
 
 
 class emailSender:
-    def sendAutomaticEmailEmail(self, html):
+    def sendAutomaticEmail(self, html):
 
         emailSendingOptions = configurationRepository().getEmailSendingOptions()
         sender = emailSendingOptions.sender

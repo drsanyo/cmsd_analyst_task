@@ -13,5 +13,5 @@ europeReport = htmlFormatter().createAircraftReport(reportItems, "Aircrafts from
 reportItems = reportGenerator().generateNonEuropeanAircraftReportItems()
 nonEuropeReport = htmlFormatter().createAircraftReport(reportItems, "Aircrafts from NON Europe countries")
 
-emailSender().sendAutomaticEmailEmail(europeReport + " " + nonEuropeReport)
+emailSender().sendAutomaticEmail(europeReport + " " + nonEuropeReport)
 
